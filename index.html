@@ -241,8 +241,8 @@ $(function(){
 		$( '.hwi__video' ).css('height', calc);
 		$( '.hwi__video>div' ).css('height', calc);
 	} else {
-		$( '#youtube_Video' ).css('height', winHeight + 100);
-		$( '.hwi__video' ).css({'height': winHeight, 'margin-bottom': '100px'});
+		$( '#youtube_Video' ).css('height', winHeight);
+		$( '.hwi__video' ).css({'height': winHeight});
 		$( '.hwi__video>div' ).css('height', winHeight);
 	}
 });
@@ -335,15 +335,13 @@ function orientationEventHandler(){
 	//--landscope
 	if(orientation == 90 || orientation == -90){
 		setTimeout(function(){
-			$( '#youtube_Video, .hwi__video, .hwi__video > div' ).css('height', $( window ).height() + 100 );
-			$( '.hwi__video' ).css('margin-bottom', '100px');
+			$( '#youtube_Video, .hwi__video, .hwi__video > div' ).css('height', $( window ).height() );
 			$( '.hwi__video--play' ).css('height', $( window ).height() );
 		}, 250);
 	} else {
 	//--portrait
 		setTimeout(function(){
 			$( '#youtube_Video, .hwi__video, .hwi__video>div, .hwi__video--play' ).css('height', ( $( window ).width() * 9 ) / 16 );
-			$( '.hwi__video' ).css('margin-bottom', '0');
 		}, 250);
 	}
 }
