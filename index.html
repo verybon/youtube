@@ -242,7 +242,7 @@ $(function(){
 		$( '.hwi__video>div' ).css('height', calc);
 	} else {
 		$( '#youtube_Video' ).css('height', winHeight);
-		$( '.hwi__video' ).css('height', winHeight + 30);
+		$( '.hwi__video' ).css('height', winHeight + 130);
 		$( '.hwi__video>div' ).css('height', winHeight);
 	}
 });
@@ -335,7 +335,7 @@ function orientationEventHandler(){
 	//--landscope
 	if(orientation == 90 || orientation == -90){
 		setTimeout(function(){
-			$( '#youtube_Video, .hwi__video, .hwi__video > div' ).css('height', $( window ).height() + 30 );
+			$( '#youtube_Video, .hwi__video, .hwi__video > div' ).css('height', $( window ).height() + 130 );
 			$( '.hwi__video--play' ).css('height', $( window ).height() );
 		}, 250);
 	} else {
