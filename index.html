@@ -241,7 +241,7 @@ $(function(){
 		$( '.hwi__video' ).css('height', calc);
 		$( '.hwi__video>div' ).css('height', calc);
 	} else {
-		$( '#youtube_Video' ).css('height', winHeight);
+		$( '#youtube_Video' ).css('height', winHeight + 100);
 		$( '.hwi__video' ).css({'height': winHeight, 'margin-top': '100px'});
 		$( '.hwi__video>div' ).css('height', winHeight);
 	}
@@ -335,7 +335,7 @@ function orientationEventHandler(){
 	//--landscope
 	if(orientation == 90 || orientation == -90){
 		setTimeout(function(){
-			$( '#youtube_Video, .hwi__video, .hwi__video > div' ).css('height', $( window ).height() );
+			$( '#youtube_Video, .hwi__video, .hwi__video > div' ).css('height', $( window ).height() + 100 );
 			$( '.hwi__video' ).css('margin-top', '100px');
 			$( '.hwi__video--play' ).css('height', $( window ).height() );
 		}, 250);
