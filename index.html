@@ -244,7 +244,7 @@ $(function(){
 		$( '#youtube_Video' ).css('height', winHeight);
 		$( '.hwi__video' ).css('height', winHeight);
 		$( '.hwi__video>div' ).css('height', winHeight);
-		$( body ).css('padding-top', '100px');
+		$( 'body' ).css('padding-top', '100px');
 	}
 });
 
@@ -338,13 +338,13 @@ function orientationEventHandler(){
 		setTimeout(function(){
 			$( '#youtube_Video, .hwi__video, .hwi__video > div' ).css('height', $( window ).height() );
 			$( '.hwi__video--play' ).css('height', $( window ).height() );
-			$( body ).css('padding-top', '100px');
+			$( 'body' ).css('padding-top', '100px');
 		}, 250);
 	} else {
 	//--portrait
 		setTimeout(function(){
 			$( '#youtube_Video, .hwi__video, .hwi__video>div, .hwi__video--play' ).css('height', ( $( window ).width() * 9 ) / 16 );
-			$( body ).css('padding-top', '0');
+			$( 'body' ).css('padding-top', '0');
 		}, 250);
 	}
 }
