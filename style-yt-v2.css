@@ -135,10 +135,10 @@ html {
 
 
 .hwi__list{
-	position: fixed;
+	position: relative;
 	top: 0;
-	left: 100%;
-	z-index: 100;
+	left: 0%;
+	z-index: 0;
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
@@ -148,7 +148,7 @@ html {
 	transition: all .3s ease;
 }
 .hwi__list.on{
-	left: 0;
+	z-index: 100;
 }
 .hwi__list li{
 	float: left;
