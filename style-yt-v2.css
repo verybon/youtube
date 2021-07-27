@@ -34,8 +34,11 @@ html {
 	width: 100%
 }
 .hwi__video{
-	position: relative;
-	height:	100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
 	transition: height .3s cubic-bezier(0.85, -0.07, 0.15, 1.25);
 }
 .hwi__video>div	{
