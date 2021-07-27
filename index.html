@@ -331,7 +331,7 @@ function orientationEventHandler(){
 	if(orientation == 90 || orientation == -90){
 		setTimeout(function(){
 			$( '#youtube_Video, .hwi__video, .hwi__video > div' ).css('height', $( window ).height() + 300 );
-			$( '.hwi__video--play' ).css('height', $( window ).height() );
+			$( '.hwi__video--play' ).css('height', $( window ).height() + 300 );
 		}, 250);
 	} else {
 	//--portrait
