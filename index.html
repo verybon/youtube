@@ -242,9 +242,8 @@ $(function(){
 		$( '.hwi__video>div' ).css('height', calc);
 	} else {
 		$( '#youtube_Video' ).css('height', winHeight);
-		$( '.hwi__video' ).css('height', winHeight);
+		$( '.hwi__video' ).css({'height': winHeight, 'margin-top': '100px'});
 		$( '.hwi__video>div' ).css('height', winHeight);
-		$( 'body' ).css('padding-top', '100px');
 	}
 });
 
@@ -337,14 +336,14 @@ function orientationEventHandler(){
 	if(orientation == 90 || orientation == -90){
 		setTimeout(function(){
 			$( '#youtube_Video, .hwi__video, .hwi__video > div' ).css('height', $( window ).height() );
+			$( '.hwi__video' ).css('margin-top', '100px');
 			$( '.hwi__video--play' ).css('height', $( window ).height() );
-			$( 'body' ).css('padding-top', '100px');
 		}, 250);
 	} else {
 	//--portrait
 		setTimeout(function(){
 			$( '#youtube_Video, .hwi__video, .hwi__video>div, .hwi__video--play' ).css('height', ( $( window ).width() * 9 ) / 16 );
-			$( 'body' ).css('padding-top', '0');
+			$( '.hwi__video' ).css('margin-top', '0');
 		}, 250);
 	}
 }
