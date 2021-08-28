@@ -84,17 +84,17 @@ html {
 .hwi__menu .bt-menu{
 	display: block;
 	position: fixed;
-	bottom: 6vw;
+	bottom: 3vw;
 	right: 2vw;
 	z-index: 200;
 	overflow: hidden;
-	width: 8vw;
-	height: 8vw;
+	width: 6vw;
+	height: 6vw;
 	border-radius: 1vw;
 	background: rgba(0,0,0,.6);
 	text-decoration: none;
 	text-indent: -9999em;
-	box-shadow: inset 0 0 0 .8vw rgba(255,255,255,.5);
+	box-shadow: inset 0 0 0 .5vw rgb(255 255 255 / 30%);
 	-webkit-transition: all .2s ease;
 	transition: all .2s ease;
 }
@@ -104,10 +104,12 @@ html {
 	content: "";
 	display: inline-block;
 	position: absolute;
-	left: 2vw;
+	top: 50%;
+	left: 1.2vw;
 	overflow: hidden;
-	width: 4vw;
-	height: .6vw;
+	width: 3.5vw;
+	height: .4vw;
+	margin-top: -.2vw;
 	background: #fff;
 	text-decoration: none;
 	-webkit-transition: all .2s ease;
@@ -115,13 +117,14 @@ html {
 }
 
 .hwi__menu .bt-menu:before{
-	top: 2.2vw;
+	-webkit-transform: translateY(1vw);
+	transform: translateY(1vw);
 }
 .hwi__menu .bt-menu:after{
-	top: 3.6vw;
+	-webkit-transform: translateY(-1vw);
+	transform: translateY(-1vw);
 }
 .hwi__menu .bt-menu > span{
-	top: 5vw;
 	font-size: 1px;
 	color: rgba(255,255,255,0);
 }
