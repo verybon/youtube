@@ -243,7 +243,7 @@
 
 $(function(){
 	var winWidth = $( window ).width(),
-		winHeight = $( window ).height(),
+		winHeight = window.innerHeight ? window.innerHeight : $(window).height();,
 		calc = ( winWidth*9 ) / 16;
 	if( winWidth < winHeight ){
 		$( '#youtube_Video' ).css('height', calc);
